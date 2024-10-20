@@ -1,0 +1,80 @@
+.wrapper {
+  display: flex;
+  min-height: 100vw;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-top: 16px;
+  border-right: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: width 0.5s;
+  transition-timing-function: ease-in-out;
+  background-color: #ffffff;
+  position: absolute;
+  top: 48px;
+}
+.wrapper-sm{
+width: 100vw;
+}
+.check {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+/* .check:checked + span {
+  background-color: blue;
+} */
+.check:checked + span::before {
+  left: 12px;
+}
+
+.toggler {
+  display: flex;
+  cursor: pointer;
+  width: 24px;
+  height: 16px;
+  border-radius: 24px;
+  background-color: #bfbfbf;
+  position: relative;
+  transition: background-color 0.2s;
+}
+.toggler::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  transition: 0.2s;
+  background-color: #fff;
+}
+.person-wrapper {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  object-fit: contain;
+}
+.user {
+  font-family: Inter;
+  font-size: 12px;
+}
+.username {
+  line-height: 16px;
+  color: #334155;
+}
+.email {
+  line-height: 16px;
+  color: #64748b;
+}
+@media only screen and (max-width: 599px) {
+  .wrapper {
+    
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    position: relative;
+  }
+}
