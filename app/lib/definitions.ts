@@ -1,0 +1,1 @@
+type CardData = { title: string, Amount: number, trend: number }

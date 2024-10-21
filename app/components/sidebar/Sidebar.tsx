@@ -21,13 +21,13 @@ interface SidebarProps {
 }
 
 const Sidebar = ({ isOpen, toggleIsOpen }: SidebarProps) => {
-  const [isScreenLarge, setIsScreenLarge] = useState(window.innerWidth > 600);
+  const [isScreenLarge, setIsScreenLarge] = useState(window.innerWidth > 460);
 
   useEffect(() => {
     const handleResize = () => {
       console.log('resizing');
       
-      setIsScreenLarge(window.innerWidth > 600);
+      setIsScreenLarge(window.innerWidth > 440);
     };
 
     window.addEventListener("resize", handleResize);
@@ -60,6 +60,7 @@ const Sidebar = ({ isOpen, toggleIsOpen }: SidebarProps) => {
           "w-12": !isOpen,
           "w-52": isOpen,
           "wrapper-sm": isOpen && !isScreenLarge,
+          "sm-not-open": !isOpen && !isScreenLarge
         })}
       >
         <div className="mb-4 flex justify-start items-center cursor-pointer">
