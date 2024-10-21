@@ -1,0 +1,52 @@
+.singlecard-wrapper {
+  border: 1px solid #f2f2f7;
+  /* width: 100%; */
+  /* width: 18.06%; */
+  /* min-width: 240px; */
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+}
+.card-title {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+color: #64748B;
+}
+.amount{
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 32px;
+color: #334155;
+
+}
+.trend {
+  display: flex;
+  align-items: center;
+}
+.trend-amount{
+font-family: Inter;
+font-size: 10px;
+font-weight: 600;
+line-height: 12px;
+}
+.trend-profit{
+color: #10B981;
+
+}
+.trend-loss{
+color: #F43F5E;
+
+}
+.arrow-wrapper{
+    padding: 8px;
+}
+@media only screen and (min-width: 460px) {
+  .singlecard-wrapper {
+    /* margin-right: 1rem; */
+  }
+}
+

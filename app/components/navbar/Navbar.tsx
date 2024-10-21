@@ -11,25 +11,14 @@ interface NavbarProps {
 
 const Navbar = ({ toggleSidebar }: NavbarProps) => {
   return (
-      <div
-        className="navbar-wrapper"
-        onClick={toggleSidebar}
-      >
-        <div className="bg-blue-300 p-2">
-          <Image
-            src={logo}
-            width={50}
-            height={50}
-            alt="Picture of the author"
-          />
-         
-        </div>
-        <div className="hamburger-wrapper">
-          <Hamburger />
-        </div>
-         
+    <div className="navbar-wrapper">
+      <div className="bg-blue-300 p-2">
+        <Image src={logo} width={50} height={50} alt="Picture of the author" />
       </div>
-    
+      <div className="hamburger-wrapper" onClick={toggleSidebar}>
+        <Hamburger />
+      </div>
+    </div>
   );
 };
 

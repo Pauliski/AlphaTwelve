@@ -15,6 +15,9 @@
 .wrapper-sm{
 width: 100vw;
 }
+.sm-not-open{
+position: relative;
+}
 .check {
   position: absolute;
   left: -9999px;
@@ -67,13 +70,13 @@ width: 100vw;
   line-height: 16px;
   color: #64748b;
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 459px) {
   .wrapper {
     
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 460px) {
   .wrapper {
     position: relative;
   }
