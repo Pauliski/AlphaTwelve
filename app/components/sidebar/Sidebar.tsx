@@ -21,7 +21,7 @@ interface SidebarProps {
 }
 
 const Sidebar = ({ isOpen, toggleIsOpen }: SidebarProps) => {
-  const [isScreenLarge, setIsScreenLarge] = useState(window.innerWidth > 460);
+  const [isScreenLarge, setIsScreenLarge] = useState<boolean>(window.innerWidth > 460);
 
   useEffect(() => {
     const handleResize = () => {

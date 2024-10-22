@@ -1,0 +1,14 @@
+.chart-wrapper{
+    flex: 1;
+}
+.chart-wrapper > canvas{
+    height: 100%;
+}
+.title{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 12px;
+
+
+}
