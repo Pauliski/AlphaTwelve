@@ -1,0 +1,98 @@
+/* Basic styles for slider */
+.slider-container {
+  position: relative;
+  /* max-width: 800px; */
+  /* margin: auto; */
+  /* overflow: hidden; */
+}
+.backarrow-wrapper{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: tomato;
+}
+
+.slider {
+  /* display: flex; */
+  position: relative;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  /* padding: 16px; */
+  /* margin-top: -22px; */
+  /* color: white; */
+  /* font-weight: bold; */
+  /* font-size: 24px; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* border: none; */
+  user-select: none;
+  z-index: 1000;
+}
+
+.prev {
+  left: 16px;
+}
+
+.next {
+  right: 16px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  /* bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; */
+  left: 0; 
+  right: 0; 
+  bottom: 10px;
+  margin-inline: auto; 
+  width: fit-content;
+
+  /* text-align: center;
+  margin-top: -20px; */
+}
+
+.dot {
+  cursor: pointer;
+  height: 3px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #717171;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+
+.dot:hover {
+  background-color: #FFFFFF;
+}
